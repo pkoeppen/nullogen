@@ -32,8 +32,6 @@ yarn-error.log*
 
 # env files
 .env
-Dockerfile
-docker-compose.yml
 
 # vercel
 .vercel
@@ -41,3 +39,8 @@ docker-compose.yml
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# templated files
+package.json
+Dockerfile
+docker-compose.yml
