@@ -44,3 +44,6 @@ next-env.d.ts
 package.json
 Dockerfile
 docker-compose.yml
+
+nginx/letsencrypt/*
+nginx/certbot/*
