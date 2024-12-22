@@ -16,13 +16,13 @@ WHITE="\e[37m"
 # === Functions ===
 
 show_help() {
-  echo -e "
+  echo -e "${CYAN}
 ▗▖  ▗▖█  ▐▌█ █  ▄▄▄   ▗▄▄▖▗▞▀▚▖▄▄▄▄  
 ▐▛▚▖▐▌▀▄▄▞▘█ █ █   █ ▐▌   ▐▛▀▀▘█   █ 
 ▐▌ ▝▜▌     █ █ ▀▄▄▄▀ ▐▌▝▜▌▝▚▄▄▖█   █ 
 ▐▌  ▐▌     █ █       ▝▚▄▞▘     
                                 v0.1
-${BOLD}Usage:${RESET} init.sh [OPTIONS]
+${RESET}${BOLD}Usage:${RESET} init.sh [OPTIONS]
 
 This script generates a boilerplate web application using NextJS, Postgres, Redis and NGINX.
 It is containerized with Docker to be vendor-independent and deployable anywhere with minimal configuration.
@@ -74,7 +74,7 @@ while [[ "$#" -gt 0 ]]; do
       shift
       ;;
     --nextjs-port)
-      NODE_ENV="$2"
+      NEXTJS_PORT="$2"
       shift
       ;;
     --node-env)

@@ -1,5 +1,5 @@
 import logger from "../logger";
-import { Database } from "@/types/db";
+import { Database } from "@/lib/types/db";
 import { Kysely, KyselyConfig, LogEvent, PostgresDialect } from "kysely";
 import pg from "pg";
 
