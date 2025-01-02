@@ -2,11 +2,13 @@
   "name": "%APP_NAME%",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack -p %NEXTJS_PORT%",
     "build": "next build",
     "start": "next start -p %NEXTJS_PORT%",
     "lint": "next lint",
+    "postgres": "docker compose -f ./docker/docker-compose.yml --env-file .env up -d postgres",
     "reset": "npm run reset-postgres && npm run reset-redis",
     "reset-postgres": "tsx ./lib/postgres/reset.ts",
     "reset-redis": "tsx ./lib/redis/reset.ts"
